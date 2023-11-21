@@ -65,7 +65,7 @@ def klikbutton():
 
 def simpan_data_ke_sqlite(namasiswa, Nilai1, Nilai2, Nilai3, prodi_terpilih):
 # Membuka atau membuat database SQLite
-    conn = sqlite3.connect("prodidb.db")
+    conn = sqlite3.connect("appdb.db")
     cursor = conn.cursor()
     cursor.excecute('''CREATE TABLE IF NOT EXISTS hasil_prediksi
                         (id INTEGER PRIMARY KEY AUTOINCREMENT, 
